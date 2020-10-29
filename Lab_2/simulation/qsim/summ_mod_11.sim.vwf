@@ -1,0 +1,629 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 20000.0;
+	SIMULATION_TIME = 20000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("out_cnt")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("out_cnt[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "out_cnt";
+}
+
+SIGNAL("out_cnt[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "out_cnt";
+}
+
+SIGNAL("out_cnt[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "out_cnt";
+}
+
+SIGNAL("out_cnt[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "out_cnt";
+}
+
+SIGNAL("reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("i_clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("test_clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("lcd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 7;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("lcd[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("lcd[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("lcd[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("lcd[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("lcd[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("lcd[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("lcd[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "lcd";
+}
+
+SIGNAL("OF")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("out_cnt[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 14785.0;
+		LEVEL 1 FOR 3060.0;
+		LEVEL 0 FOR 2155.0;
+	}
+}
+
+TRANSITION_LIST("out_cnt[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 3565.0;
+		LEVEL 1 FOR 3060.0;
+		LEVEL 0 FOR 4080.0;
+		LEVEL 1 FOR 4080.0;
+		LEVEL 0 FOR 5215.0;
+	}
+}
+
+TRANSITION_LIST("out_cnt[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1525.0;
+		LEVEL 1 FOR 2040.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 1020.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2040.0;
+			LEVEL 1 FOR 2040.0;
+		}
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("out_cnt[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 505.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 1020.0;
+			LEVEL 0 FOR 1020.0;
+		}
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 2040.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 1020.0;
+			LEVEL 0 FOR 1020.0;
+		}
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 5920.0;
+		LEVEL 0 FOR 1120.0;
+		LEVEL 1 FOR 12960.0;
+	}
+}
+
+TRANSITION_LIST("i_clk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 2000;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+	}
+}
+
+TRANSITION_LIST("test_clk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 505.0;
+		NODE
+		{
+			REPEAT = 19;
+			LEVEL 1 FOR 510.0;
+			LEVEL 0 FOR 510.0;
+		}
+		LEVEL 1 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("lcd[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1525.0;
+		LEVEL 1 FOR 5100.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 5100.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 3060.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("lcd[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 505.0;
+		LEVEL 0 FOR 3060.0;
+		LEVEL 1 FOR 4080.0;
+		LEVEL 0 FOR 3060.0;
+		LEVEL 1 FOR 3060.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 4080.0;
+		LEVEL 0 FOR 1135.0;
+	}
+}
+
+TRANSITION_LIST("lcd[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 505.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 3060.0;
+		LEVEL 1 FOR 2040.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 3060.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 1020.0;
+			LEVEL 0 FOR 1020.0;
+		}
+		LEVEL 1 FOR 2040.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("lcd[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 505.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 2040.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 3060.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 1020.0;
+			LEVEL 1 FOR 2040.0;
+		}
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("lcd[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1525.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 6120.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 10200.0;
+		LEVEL 0 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("lcd[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 4585.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 5100.0;
+		LEVEL 0 FOR 2040.0;
+		LEVEL 1 FOR 6235.0;
+	}
+}
+
+TRANSITION_LIST("lcd[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 505.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 2040.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 3060.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 2040.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 7140.0;
+		LEVEL 0 FOR 1020.0;
+		LEVEL 1 FOR 115.0;
+	}
+}
+
+TRANSITION_LIST("OF")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 6625.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 10200.0;
+		LEVEL 1 FOR 1020.0;
+		LEVEL 0 FOR 1135.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "i_clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "test_clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "out_cnt";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5, 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "out_cnt[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "out_cnt[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "out_cnt[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "out_cnt[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "reset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+	CHILDREN = 9, 10, 11, 12, 13, 14, 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "lcd[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OF";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

@@ -1,0 +1,13 @@
+module clk_generator(
+	input i_clk,
+	output o_clk
+	);
+	
+	parameter scaler = 100;
+	
+	always@(posedge i_clk)
+	begin
+		
+	
+	end
+endmodule

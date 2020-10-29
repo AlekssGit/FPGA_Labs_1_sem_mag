@@ -1,0 +1,170 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "10/15/2020 11:56:13"
+
+// 
+// Device: Altera EP4CGX15BF14C6 Package FBGA169
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Lab_4 (
+	i_clk,
+	A,
+	B,
+	res);
+input 	i_clk;
+input 	A;
+input 	B;
+output 	res;
+
+// Design Ports Information
+// res	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// i_clk	=>  Location: PIN_A8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Lab_4_6_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire \res~output_o ;
+wire \i_clk~input_o ;
+wire \B~input_o ;
+wire \A~input_o ;
+wire [0:0] \rm|altsyncram_component|auto_generated|q_a ;
+
+wire [17:0] \rm|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
+
+assign \rm|altsyncram_component|auto_generated|q_a [0] = \rm|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0];
+
+// Location: IOOBUF_X8_Y0_N9
+cycloneiv_io_obuf \res~output (
+	.i(\rm|altsyncram_component|auto_generated|q_a [0]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\res~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \res~output .bus_hold = "false";
+defparam \res~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X12_Y31_N8
+cycloneiv_io_ibuf \i_clk~input (
+	.i(i_clk),
+	.ibar(gnd),
+	.o(\i_clk~input_o ));
+// synopsys translate_off
+defparam \i_clk~input .bus_hold = "false";
+defparam \i_clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y31_N8
+cycloneiv_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X10_Y31_N1
+cycloneiv_io_ibuf \A~input (
+	.i(A),
+	.ibar(gnd),
+	.o(\A~input_o ));
+// synopsys translate_off
+defparam \A~input .bus_hold = "false";
+defparam \A~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: M9K_X7_Y30_N0
+cycloneiv_ram_block \rm|altsyncram_component|auto_generated|ram_block1a0 (
+	.portawe(vcc),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\i_clk~input_o ),
+	.clk1(gnd),
+	.ena0(vcc),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain(18'b000000000000000000),
+	.portaaddr({\A~input_o ,\B~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(18'b000000000000000000),
+	.portbaddr(2'b00),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(\rm|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ),
+	.portbdataout());
+// synopsys translate_off
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .init_file = "Lab_4.mif";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "lpmRom:rm|altsyncram:altsyncram_component|altsyncram_q391:auto_generated|ALTSYNCRAM";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "rom";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 2;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clock = "clock0";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_width = 18;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_last_address = 3;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 32;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_width = 1;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_a_write_enable_clock = "none";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_width = 2;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 18;
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
+defparam \rm|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 72'h000040000000040001;
+// synopsys translate_on
+
+assign res = \res~output_o ;
+
+endmodule

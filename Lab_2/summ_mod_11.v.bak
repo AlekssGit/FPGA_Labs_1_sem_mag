@@ -1,0 +1,11 @@
+module summ_mod_11(
+	input clk,
+	input reset,
+	output [2:0] lamp,
+	output [6:0] lcd_hi,
+	output [6:0]  lcd_low
+);
+
+reg [4:0] counter;
+
+endmodule

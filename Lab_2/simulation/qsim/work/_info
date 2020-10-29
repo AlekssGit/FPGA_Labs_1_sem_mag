@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Sasha\Univer\Quartus\Lab_2\simulation\qsim
+vsumm_mod_11
+Z1 !s100 Rg1z>QeT@7l7bh@[?TNUQ3
+Z2 IhO?k=<W]@8BJVfk256XNY1
+Z3 V4=3gPW?eI6OLg4OQ4U4P:1
+Z4 dC:\Sasha\Univer\Quartus\Lab_2\simulation\qsim
+Z5 w1601389476
+Z6 8summ_mod_11.vo
+Z7 Fsumm_mod_11.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|summ_mod_11.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1601389477.851000
+Z12 !s107 summ_mod_11.vo|
+!s101 -O0
+vsumm_mod_11_vlg_check_tst
+!i10b 1
+Z13 !s100 CNI7FM8EMRbkXnkH8V_kY0
+Z14 Izf7Uo]5TzA6`BM>Ml8Fdl2
+Z15 VK0fTY:d?k>T7QHYCNZK`Y1
+R4
+Z16 w1601389475
+Z17 8summ_mod_11.vt
+Z18 Fsumm_mod_11.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1601389478.035000
+Z20 !s107 summ_mod_11.vt|
+Z21 !s90 -work|work|summ_mod_11.vt|
+!s101 -O0
+R10
+vsumm_mod_11_vlg_sample_tst
+!i10b 1
+Z22 !s100 Ze^VonETc`4hlfUBiG9`Y3
+Z23 IDFDVao81`cb93B;l<OUi=1
+Z24 V04jWV9iGQNfnIl;BdMnaT3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vsumm_mod_11_vlg_vec_tst
+!i10b 1
+!s100 2ABljVjM1XENS45;=hHbg2
+ISA7bQ:hAa2>f[<M1U_:^k0
+Z25 VYaf;dA;XS3<j?2M69@Saa0
+R4
+R16
+R17
+R18
+Z26 L0 565
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

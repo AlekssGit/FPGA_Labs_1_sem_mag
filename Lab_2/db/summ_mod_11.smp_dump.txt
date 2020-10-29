@@ -1,0 +1,14 @@
+
+State Machine - |summ_mod_11|state
+Name state.s_tenth state.s_ninth state.s_eighth state.s_seventh state.s_sixth state.s_fifth state.s_fourth state.s_third state.s_second state.s_first state.s_null 
+state.s_null 0 0 0 0 0 0 0 0 0 0 0 
+state.s_first 0 0 0 0 0 0 0 0 0 1 1 
+state.s_second 0 0 0 0 0 0 0 0 1 0 1 
+state.s_third 0 0 0 0 0 0 0 1 0 0 1 
+state.s_fourth 0 0 0 0 0 0 1 0 0 0 1 
+state.s_fifth 0 0 0 0 0 1 0 0 0 0 1 
+state.s_sixth 0 0 0 0 1 0 0 0 0 0 1 
+state.s_seventh 0 0 0 1 0 0 0 0 0 0 1 
+state.s_eighth 0 0 1 0 0 0 0 0 0 0 1 
+state.s_ninth 0 1 0 0 0 0 0 0 0 0 1 
+state.s_tenth 1 0 0 0 0 0 0 0 0 0 1 

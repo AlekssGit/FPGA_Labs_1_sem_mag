@@ -1,0 +1,61 @@
+|summ_mod_11
+i_clk => i_clk~0.IN1
+reset => state~0.OUTPUTSELECT
+reset => state~1.OUTPUTSELECT
+reset => state~2.OUTPUTSELECT
+reset => state~3.OUTPUTSELECT
+reset => state~4.OUTPUTSELECT
+reset => state~5.OUTPUTSELECT
+reset => state~6.OUTPUTSELECT
+reset => state~7.OUTPUTSELECT
+reset => state~8.OUTPUTSELECT
+reset => state~9.OUTPUTSELECT
+reset => state~10.OUTPUTSELECT
+reset => out_cnt~4.OUTPUTSELECT
+reset => out_cnt~5.OUTPUTSELECT
+reset => out_cnt~6.OUTPUTSELECT
+reset => out_cnt~7.OUTPUTSELECT
+reset => OF~0.OUTPUTSELECT
+lcd[0] <= semisegment:sem.result
+lcd[1] <= semisegment:sem.result
+lcd[2] <= semisegment:sem.result
+lcd[3] <= semisegment:sem.result
+lcd[4] <= semisegment:sem.result
+lcd[5] <= semisegment:sem.result
+lcd[6] <= semisegment:sem.result
+OF <= OF~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cnt[0] <= out_cnt[0]~3.DB_MAX_OUTPUT_PORT_TYPE
+out_cnt[1] <= out_cnt[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+out_cnt[2] <= out_cnt[2]~1.DB_MAX_OUTPUT_PORT_TYPE
+out_cnt[3] <= out_cnt[3]~0.DB_MAX_OUTPUT_PORT_TYPE
+test_clk <= generator:gen.port1
+
+
+|summ_mod_11|generator:gen
+i_clk => o_clk~reg0.CLK
+i_clk => counter[0].CLK
+i_clk => counter[1].CLK
+i_clk => counter[2].CLK
+i_clk => counter[3].CLK
+i_clk => counter[4].CLK
+i_clk => counter[5].CLK
+i_clk => counter[6].CLK
+i_clk => counter[7].CLK
+i_clk => counter[8].CLK
+o_clk <= o_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|summ_mod_11|semisegment:sem
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+result[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

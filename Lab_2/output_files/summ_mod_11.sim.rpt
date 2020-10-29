@@ -1,0 +1,324 @@
+Simulator report for summ_mod_11
+Thu Oct 15 10:58:44 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 20.0 us      ;
+; Simulation Netlist Size     ; 143 nodes    ;
+; Simulation Coverage         ;      88.11 % ;
+; Total Number of Transitions ; 24263        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                      ;
++--------------------------------------------------------------------------------------------+--------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                    ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                 ; Timing        ;
+; Start time                                                                                 ; 0 ns                                       ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                        ;               ;
+; Vector input source                                                                        ; C:/Sasha/Univer/Quartus/Lab_2/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                         ; On            ;
+; Check outputs                                                                              ; Off                                        ; Off           ;
+; Report simulation coverage                                                                 ; On                                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                        ; Off           ;
+; Detect glitches                                                                            ; Off                                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                  ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      88.11 % ;
+; Total nodes checked                                 ; 143          ;
+; Total output ports checked                          ; 143          ;
+; Total output ports with complete 1/0-value coverage ; 126          ;
+; Total output ports with no 1/0-value coverage       ; 17           ;
+; Total output ports with no 1-value coverage         ; 17           ;
+; Total output ports with no 0-value coverage         ; 17           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |summ_mod_11|state.s_seventh            ; |summ_mod_11|state.s_seventh            ; regout           ;
+; |summ_mod_11|state.s_eighth             ; |summ_mod_11|state.s_eighth             ; regout           ;
+; |summ_mod_11|state.s_ninth              ; |summ_mod_11|state.s_ninth              ; regout           ;
+; |summ_mod_11|state.s_tenth              ; |summ_mod_11|state.s_tenth              ; regout           ;
+; |summ_mod_11|out_cnt[3]~reg0            ; |summ_mod_11|out_cnt[3]~reg0            ; regout           ;
+; |summ_mod_11|out_cnt[2]~reg0            ; |summ_mod_11|out_cnt[2]~reg0            ; regout           ;
+; |summ_mod_11|out_cnt[1]~reg0            ; |summ_mod_11|out_cnt[1]~reg0            ; regout           ;
+; |summ_mod_11|out_cnt[0]~reg0            ; |summ_mod_11|out_cnt[0]~reg0            ; regout           ;
+; |summ_mod_11|WideOr0                    ; |summ_mod_11|WideOr0                    ; out0             ;
+; |summ_mod_11|WideOr1                    ; |summ_mod_11|WideOr1                    ; out0             ;
+; |summ_mod_11|OF~reg0                    ; |summ_mod_11|OF~reg0                    ; regout           ;
+; |summ_mod_11|WideOr2                    ; |summ_mod_11|WideOr2                    ; out0             ;
+; |summ_mod_11|WideOr3                    ; |summ_mod_11|WideOr3                    ; out0             ;
+; |summ_mod_11|WideOr4                    ; |summ_mod_11|WideOr4                    ; out0             ;
+; |summ_mod_11|state~0                    ; |summ_mod_11|state~0                    ; out              ;
+; |summ_mod_11|state~1                    ; |summ_mod_11|state~1                    ; out              ;
+; |summ_mod_11|state~2                    ; |summ_mod_11|state~2                    ; out              ;
+; |summ_mod_11|state~3                    ; |summ_mod_11|state~3                    ; out              ;
+; |summ_mod_11|state~4                    ; |summ_mod_11|state~4                    ; out              ;
+; |summ_mod_11|state~5                    ; |summ_mod_11|state~5                    ; out              ;
+; |summ_mod_11|state~6                    ; |summ_mod_11|state~6                    ; out              ;
+; |summ_mod_11|state~7                    ; |summ_mod_11|state~7                    ; out              ;
+; |summ_mod_11|state~8                    ; |summ_mod_11|state~8                    ; out              ;
+; |summ_mod_11|state~9                    ; |summ_mod_11|state~9                    ; out              ;
+; |summ_mod_11|state~10                   ; |summ_mod_11|state~10                   ; out              ;
+; |summ_mod_11|out_cnt~4                  ; |summ_mod_11|out_cnt~4                  ; out              ;
+; |summ_mod_11|out_cnt~5                  ; |summ_mod_11|out_cnt~5                  ; out              ;
+; |summ_mod_11|out_cnt~6                  ; |summ_mod_11|out_cnt~6                  ; out              ;
+; |summ_mod_11|out_cnt~7                  ; |summ_mod_11|out_cnt~7                  ; out              ;
+; |summ_mod_11|OF~0                       ; |summ_mod_11|OF~0                       ; out              ;
+; |summ_mod_11|state.s_sixth              ; |summ_mod_11|state.s_sixth              ; regout           ;
+; |summ_mod_11|state.s_fifth              ; |summ_mod_11|state.s_fifth              ; regout           ;
+; |summ_mod_11|state.s_fourth             ; |summ_mod_11|state.s_fourth             ; regout           ;
+; |summ_mod_11|state.s_third              ; |summ_mod_11|state.s_third              ; regout           ;
+; |summ_mod_11|state.s_second             ; |summ_mod_11|state.s_second             ; regout           ;
+; |summ_mod_11|state.s_first              ; |summ_mod_11|state.s_first              ; regout           ;
+; |summ_mod_11|state.s_null               ; |summ_mod_11|state.s_null               ; regout           ;
+; |summ_mod_11|i_clk                      ; |summ_mod_11|i_clk                      ; out              ;
+; |summ_mod_11|reset                      ; |summ_mod_11|reset                      ; out              ;
+; |summ_mod_11|lcd[0]                     ; |summ_mod_11|lcd[0]                     ; pin_out          ;
+; |summ_mod_11|lcd[1]                     ; |summ_mod_11|lcd[1]                     ; pin_out          ;
+; |summ_mod_11|lcd[2]                     ; |summ_mod_11|lcd[2]                     ; pin_out          ;
+; |summ_mod_11|lcd[3]                     ; |summ_mod_11|lcd[3]                     ; pin_out          ;
+; |summ_mod_11|lcd[4]                     ; |summ_mod_11|lcd[4]                     ; pin_out          ;
+; |summ_mod_11|lcd[5]                     ; |summ_mod_11|lcd[5]                     ; pin_out          ;
+; |summ_mod_11|lcd[6]                     ; |summ_mod_11|lcd[6]                     ; pin_out          ;
+; |summ_mod_11|OF                         ; |summ_mod_11|OF                         ; pin_out          ;
+; |summ_mod_11|out_cnt[0]                 ; |summ_mod_11|out_cnt[0]                 ; pin_out          ;
+; |summ_mod_11|out_cnt[1]                 ; |summ_mod_11|out_cnt[1]                 ; pin_out          ;
+; |summ_mod_11|out_cnt[2]                 ; |summ_mod_11|out_cnt[2]                 ; pin_out          ;
+; |summ_mod_11|out_cnt[3]                 ; |summ_mod_11|out_cnt[3]                 ; pin_out          ;
+; |summ_mod_11|test_clk                   ; |summ_mod_11|test_clk                   ; pin_out          ;
+; |summ_mod_11|state~11                   ; |summ_mod_11|state~11                   ; out0             ;
+; |summ_mod_11|state.s_null~0             ; |summ_mod_11|state.s_null~0             ; out0             ;
+; |summ_mod_11|WideOr3~0                  ; |summ_mod_11|WideOr3~0                  ; out0             ;
+; |summ_mod_11|state.s_first~0            ; |summ_mod_11|state.s_first~0            ; out0             ;
+; |summ_mod_11|WideOr2~0                  ; |summ_mod_11|WideOr2~0                  ; out0             ;
+; |summ_mod_11|state.s_second~0           ; |summ_mod_11|state.s_second~0           ; out0             ;
+; |summ_mod_11|WideOr2~1                  ; |summ_mod_11|WideOr2~1                  ; out0             ;
+; |summ_mod_11|state.s_third~0            ; |summ_mod_11|state.s_third~0            ; out0             ;
+; |summ_mod_11|WideOr1~0                  ; |summ_mod_11|WideOr1~0                  ; out0             ;
+; |summ_mod_11|state.s_fourth~0           ; |summ_mod_11|state.s_fourth~0           ; out0             ;
+; |summ_mod_11|WideOr1~1                  ; |summ_mod_11|WideOr1~1                  ; out0             ;
+; |summ_mod_11|state.s_fifth~0            ; |summ_mod_11|state.s_fifth~0            ; out0             ;
+; |summ_mod_11|WideOr1~2                  ; |summ_mod_11|WideOr1~2                  ; out0             ;
+; |summ_mod_11|state.s_sixth~0            ; |summ_mod_11|state.s_sixth~0            ; out0             ;
+; |summ_mod_11|WideOr1~3                  ; |summ_mod_11|WideOr1~3                  ; out0             ;
+; |summ_mod_11|state.s_seventh~0          ; |summ_mod_11|state.s_seventh~0          ; out0             ;
+; |summ_mod_11|WideOr0~0                  ; |summ_mod_11|WideOr0~0                  ; out0             ;
+; |summ_mod_11|state.s_eighth~0           ; |summ_mod_11|state.s_eighth~0           ; out0             ;
+; |summ_mod_11|WideOr0~1                  ; |summ_mod_11|WideOr0~1                  ; out0             ;
+; |summ_mod_11|state.s_ninth~0            ; |summ_mod_11|state.s_ninth~0            ; out0             ;
+; |summ_mod_11|WideOr0~2                  ; |summ_mod_11|WideOr0~2                  ; out0             ;
+; |summ_mod_11|state.s_tenth~0            ; |summ_mod_11|state.s_tenth~0            ; out0             ;
+; |summ_mod_11|Selector0~0                ; |summ_mod_11|Selector0~0                ; out0             ;
+; |summ_mod_11|state~15                   ; |summ_mod_11|state~15                   ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr0    ; |summ_mod_11|semisegment:sem|WideOr0    ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr1    ; |summ_mod_11|semisegment:sem|WideOr1    ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr2    ; |summ_mod_11|semisegment:sem|WideOr2    ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr3    ; |summ_mod_11|semisegment:sem|WideOr3    ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr4    ; |summ_mod_11|semisegment:sem|WideOr4    ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr5    ; |summ_mod_11|semisegment:sem|WideOr5    ; out0             ;
+; |summ_mod_11|semisegment:sem|WideOr6    ; |summ_mod_11|semisegment:sem|WideOr6    ; out0             ;
+; |summ_mod_11|generator:gen|o_clk        ; |summ_mod_11|generator:gen|o_clk        ; regout           ;
+; |summ_mod_11|generator:gen|counter~3    ; |summ_mod_11|generator:gen|counter~3    ; out              ;
+; |summ_mod_11|generator:gen|counter~4    ; |summ_mod_11|generator:gen|counter~4    ; out              ;
+; |summ_mod_11|generator:gen|counter~5    ; |summ_mod_11|generator:gen|counter~5    ; out              ;
+; |summ_mod_11|generator:gen|counter~6    ; |summ_mod_11|generator:gen|counter~6    ; out              ;
+; |summ_mod_11|generator:gen|counter~7    ; |summ_mod_11|generator:gen|counter~7    ; out              ;
+; |summ_mod_11|generator:gen|counter~8    ; |summ_mod_11|generator:gen|counter~8    ; out              ;
+; |summ_mod_11|generator:gen|counter[0]   ; |summ_mod_11|generator:gen|counter[0]   ; regout           ;
+; |summ_mod_11|generator:gen|counter[1]   ; |summ_mod_11|generator:gen|counter[1]   ; regout           ;
+; |summ_mod_11|generator:gen|counter[2]   ; |summ_mod_11|generator:gen|counter[2]   ; regout           ;
+; |summ_mod_11|generator:gen|counter[3]   ; |summ_mod_11|generator:gen|counter[3]   ; regout           ;
+; |summ_mod_11|generator:gen|counter[4]   ; |summ_mod_11|generator:gen|counter[4]   ; regout           ;
+; |summ_mod_11|generator:gen|counter[5]   ; |summ_mod_11|generator:gen|counter[5]   ; regout           ;
+; |summ_mod_11|Selector0~1                ; |summ_mod_11|Selector0~1                ; out0             ;
+; |summ_mod_11|Selector0~2                ; |summ_mod_11|Selector0~2                ; out0             ;
+; |summ_mod_11|semisegment:sem|Decoder0~0 ; |summ_mod_11|semisegment:sem|Decoder0~0 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~1 ; |summ_mod_11|semisegment:sem|Decoder0~1 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~2 ; |summ_mod_11|semisegment:sem|Decoder0~2 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~3 ; |summ_mod_11|semisegment:sem|Decoder0~3 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~4 ; |summ_mod_11|semisegment:sem|Decoder0~4 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~5 ; |summ_mod_11|semisegment:sem|Decoder0~5 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~6 ; |summ_mod_11|semisegment:sem|Decoder0~6 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~7 ; |summ_mod_11|semisegment:sem|Decoder0~7 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~8 ; |summ_mod_11|semisegment:sem|Decoder0~8 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~9 ; |summ_mod_11|semisegment:sem|Decoder0~9 ; out              ;
+; |summ_mod_11|generator:gen|LessThan0~0  ; |summ_mod_11|generator:gen|LessThan0~0  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~1  ; |summ_mod_11|generator:gen|LessThan0~1  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~2  ; |summ_mod_11|generator:gen|LessThan0~2  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~3  ; |summ_mod_11|generator:gen|LessThan0~3  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~4  ; |summ_mod_11|generator:gen|LessThan0~4  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~5  ; |summ_mod_11|generator:gen|LessThan0~5  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~6  ; |summ_mod_11|generator:gen|LessThan0~6  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~7  ; |summ_mod_11|generator:gen|LessThan0~7  ; out0             ;
+; |summ_mod_11|generator:gen|LessThan0~8  ; |summ_mod_11|generator:gen|LessThan0~8  ; out0             ;
+; |summ_mod_11|generator:gen|Add0~0       ; |summ_mod_11|generator:gen|Add0~0       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~1       ; |summ_mod_11|generator:gen|Add0~1       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~2       ; |summ_mod_11|generator:gen|Add0~2       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~3       ; |summ_mod_11|generator:gen|Add0~3       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~4       ; |summ_mod_11|generator:gen|Add0~4       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~5       ; |summ_mod_11|generator:gen|Add0~5       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~6       ; |summ_mod_11|generator:gen|Add0~6       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~7       ; |summ_mod_11|generator:gen|Add0~7       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~8       ; |summ_mod_11|generator:gen|Add0~8       ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |summ_mod_11|generator:gen|counter~0     ; |summ_mod_11|generator:gen|counter~0     ; out              ;
+; |summ_mod_11|generator:gen|counter~1     ; |summ_mod_11|generator:gen|counter~1     ; out              ;
+; |summ_mod_11|generator:gen|counter~2     ; |summ_mod_11|generator:gen|counter~2     ; out              ;
+; |summ_mod_11|generator:gen|counter[6]    ; |summ_mod_11|generator:gen|counter[6]    ; regout           ;
+; |summ_mod_11|generator:gen|counter[7]    ; |summ_mod_11|generator:gen|counter[7]    ; regout           ;
+; |summ_mod_11|generator:gen|counter[8]    ; |summ_mod_11|generator:gen|counter[8]    ; regout           ;
+; |summ_mod_11|semisegment:sem|Decoder0~10 ; |summ_mod_11|semisegment:sem|Decoder0~10 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~11 ; |summ_mod_11|semisegment:sem|Decoder0~11 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~12 ; |summ_mod_11|semisegment:sem|Decoder0~12 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~13 ; |summ_mod_11|semisegment:sem|Decoder0~13 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~14 ; |summ_mod_11|semisegment:sem|Decoder0~14 ; out              ;
+; |summ_mod_11|generator:gen|Add0~9        ; |summ_mod_11|generator:gen|Add0~9        ; out0             ;
+; |summ_mod_11|generator:gen|Add0~10       ; |summ_mod_11|generator:gen|Add0~10       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~11       ; |summ_mod_11|generator:gen|Add0~11       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~12       ; |summ_mod_11|generator:gen|Add0~12       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~13       ; |summ_mod_11|generator:gen|Add0~13       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~14       ; |summ_mod_11|generator:gen|Add0~14       ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |summ_mod_11|generator:gen|counter~0     ; |summ_mod_11|generator:gen|counter~0     ; out              ;
+; |summ_mod_11|generator:gen|counter~1     ; |summ_mod_11|generator:gen|counter~1     ; out              ;
+; |summ_mod_11|generator:gen|counter~2     ; |summ_mod_11|generator:gen|counter~2     ; out              ;
+; |summ_mod_11|generator:gen|counter[6]    ; |summ_mod_11|generator:gen|counter[6]    ; regout           ;
+; |summ_mod_11|generator:gen|counter[7]    ; |summ_mod_11|generator:gen|counter[7]    ; regout           ;
+; |summ_mod_11|generator:gen|counter[8]    ; |summ_mod_11|generator:gen|counter[8]    ; regout           ;
+; |summ_mod_11|semisegment:sem|Decoder0~10 ; |summ_mod_11|semisegment:sem|Decoder0~10 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~11 ; |summ_mod_11|semisegment:sem|Decoder0~11 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~12 ; |summ_mod_11|semisegment:sem|Decoder0~12 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~13 ; |summ_mod_11|semisegment:sem|Decoder0~13 ; out              ;
+; |summ_mod_11|semisegment:sem|Decoder0~14 ; |summ_mod_11|semisegment:sem|Decoder0~14 ; out              ;
+; |summ_mod_11|generator:gen|Add0~9        ; |summ_mod_11|generator:gen|Add0~9        ; out0             ;
+; |summ_mod_11|generator:gen|Add0~10       ; |summ_mod_11|generator:gen|Add0~10       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~11       ; |summ_mod_11|generator:gen|Add0~11       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~12       ; |summ_mod_11|generator:gen|Add0~12       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~13       ; |summ_mod_11|generator:gen|Add0~13       ; out0             ;
+; |summ_mod_11|generator:gen|Add0~14       ; |summ_mod_11|generator:gen|Add0~14       ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Oct 15 10:58:43 2020
+Info: Command: quartus_sim --simulation_results_format=VWF summ_mod_11 -c summ_mod_11
+Info (324025): Using vector source file "C:/Sasha/Univer/Quartus/Lab_2/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      88.11 %
+Info (328052): Number of transitions in simulation is 24263
+Info (324045): Vector file summ_mod_11.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4449 megabytes
+    Info: Processing ended: Thu Oct 15 10:58:44 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
